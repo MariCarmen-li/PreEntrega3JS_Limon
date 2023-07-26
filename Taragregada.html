@@ -8,27 +8,6 @@
     <title>Vista Profesores Vista Tarea Asignada</title>
     <link rel="stylesheet" href="css/estilostareagregada.css">
 
-    <script>
-      
-
-      var botonesMostrados = false;
-
-      function mostrarOcultarBotones() {
-          var boton1 = document.getElementById("boton1");
-          var boton2 = document.getElementById("boton2");
-
-          if (!botonesMostrados) {
-              boton1.style.display = "block";
-              boton2.style.display = "block";
-              botonesMostrados = true;
-          } else {
-              boton1.style.display = "none";
-              boton2.style.display = "none";
-              botonesMostrados = false;
-          }
-      }
-      </script>
-
 </head>
 
 <body>
@@ -70,7 +49,7 @@
       </div>
     </div>
 
-  <script src="./js/mainProfesor.js"></script>
+  <script src="./js/main.js"></script>
   <script>
     // Obtener la información de los links desde el Local Storage y convertirla en objetos JavaScript
 const linksArray = JSON.parse(localStorage.getItem('linksArray') || '[]');
